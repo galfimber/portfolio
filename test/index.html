@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.svg" type="image/x-icon">s
+    <title>growtask-test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/gogh" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+  </head>
+  <body id="top">
+    <!--Шапка сайта-->
+    <header>
+      <div class="container">
+        <div class="header_body">
+          <a class="nav_logo_link nav_logo" href="#top"
+            ><img
+              class="nav_logo_main"
+              src="logo/logo-desktop.svg"
+              alt="Logo" />
+            <img class="nav_logo_up" src="logo/up.svg" alt="Logo-up"
+          /></a>
+          <!--Блок замена логотипа в открытом меню бургер-->
+          <div class="nav_logo_menu">Меню</div>
+          <div class="nav_menu_burger">
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+          <!--Блок навигации-->
+          <nav class="nav">
+            <ul class="nav_menu">
+              <a class="menu" href="#two"
+                ><li class="nav_menu_li">Текст и картинки</li></a
+              >
+              <a class="menu" href="#three"
+                ><li class="nav_menu_li">Пример слайдера</li></a
+              >
+              <a class="menu" href="#four"
+                ><li class="nav_menu_li">Кнопки и картинки</li></a
+              >
+              <a class="menu" href="#five"
+                ><li class="nav_menu_li">Вопрос — ответ</li></a
+              >
+              <a class="nav-button" href="#six"
+                ><li class="nav_menu_li">К форме</li></a
+              >
+            </ul>
+            <!--Ссылки для меню бургер-->
+            <div class="nav_socials">
+              <a
+                class="six_left_social_vk nav_social"
+                href="https://vk.com/growtask"
+                target="_ blank"
+              >
+                <img src="icon/vk.svg" alt=""
+              /></a>
+              <a
+                class="six_left_social_telegram nav_social"
+                href="https://t.me/growtask"
+                target="_blank"
+              >
+                <img src="icon/telegram.svg" alt=""
+              /></a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Основной контент-->
+    <main>
+      <!--Первый блок-->
+      <div class="one container">
+        <!--Левая часть блока с текстом-->
+        <div class="one_left">
+          <h1 class="one_left_head">
+            Покажи нам чудеса <span>своей вёрстки</span>
+          </h1>
+          <p class="one_left_text">
+            Это текстовое задание, которое нужно просто и грамотно сверстать. Мы
+            уверены, что у тебя всё получится.
+          </p>
+          <div class="one_toform">
+            <p>Покажи скролл на <span>до формы:</span></p>
+            <a href="#six">К форме</a>
+          </div>
+        </div>
+        <!--Правая часть блока с картинками-->
+        <div class="one_right">
+          <div class="one_right_img">
+            <img src="img/1.1.jpg" alt="" />
+            <img src="img/1.2.jpg" alt="" />
+          </div>
+          <img src="img/1.3.jpg" alt="" />
+        </div>
+        <div class="one_toform mobil">
+          <p>Покажи скролл на <span>до формы:</span></p>
+          <a href="#six">К форме</a>
+        </div>
+      </div>
+      <!--Фон второго блока-->
+      <div class="main_two_back">
+        <!--Второй блок-->
+        <div class="container">
+          <div class="two" id="two">
+            <!--Левая часть блока с текстом-->
+            <div class="two_left">
+              <div class="two_left_text">
+                <h2>Про вакансию</h2>
+                <p>
+                  Мы ищем аккуратного верстальщика, который хочет учиться и
+                  развиваться. С этим мы, конечно же, поможем.<br /><br />Напомним
+                  про условия:
+                </p>
+              </div>
+              <div class="two_left_cards">
+                <div class="two_card">
+                  <p class="two_card_head">20000</p>
+                  <p class="two_card_text">
+                    Твой оклад на время стажировки (Возможны премии)
+                  </p>
+                </div>
+                <div class="two_card">
+                  <p class="two_card_head">5/2</p>
+                  <p class="two_card_text">Рабочий график</p>
+                </div>
+                <div class="two_card">
+                  <p class="two_card_head">8 ч</p>
+                  <p class="two_card_text">Рабочий день</p>
+                </div>
+              </div>
+            </div>
+            <!--Правая часть блока с картинками-->
+            <div class="two_right">
+              <img src="img/2.1.jpg" alt="" />
+              <img src="img/2.2.jpg" alt="" />
+              <img src="img/2.3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Третий блок-->
+      <div class="three container">
+        <!--Кнопки влево-вправо-->
+        <div class="three-top" id="three">
+          <h2>Сверстай слайдер</h2>
+          <div class="buttons-n-p">
+            <div class="button">
+              <div class="prev"></div>
+            </div>
+            <div class="button">
+              <div class="next"></div>
+            </div>
+          </div>
+        </div>
+        <!--Главный контейнер слайдера-->
+        <div class="three-slider swiper">
+          <!--Оболочка-->
+          <div class="three-slider_wrapper swiper-wrapper">
+            <!--Слайды-->
+            <div class="three-slider_slide swiper-slide">
+              <div class="three-slider_img slider1">
+                <div class="three-slider_img-title"><p>Северная корона</p></div>
+              </div>
+            </div>
+            <div class="three-slider_slide swiper-slide">
+              <div class="three-slider_img slider2">
+                <div class="three-slider_img-title">
+                  <p>Moscow barbering school</p>
+                </div>
+              </div>
+            </div>
+            <div class="three-slider_slide swiper-slide">
+              <div class="three-slider_img slider3">
+                <div class="three-slider_img-title"><p>Rh store</p></div>
+              </div>
+            </div>
+            <div class="three-slider_slide swiper-slide">
+              <div class="three-slider_img slider4">
+                <div class="three-slider_img-title"><p>Poolspecial</p></div>
+              </div>
+            </div>
+            <div class="three-slider_slide swiper-slide">
+              <div class="three-slider_img slider5">
+                <div class="three-slider_img-title"><p>Rh prod</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Фон четвертого блока-->
+      <div class="main_four_back">
+        <!--Четрвертый блок-->
+        <div class="four container" id="four">
+          <!--Левая часть блока с картинкой-->
+          <div class="four_img"></div>
+          <!--Правая часть блока с кнопками-->
+          <div class="four_right">
+            <!--Радиокнопки-->
+            <div class="four_right_radio">
+              <input
+                type="radio"
+                id="radio-1"
+                name="radio"
+                value="img/4.1.jpg"
+                checked
+              />
+              <label for="radio-1"
+                ><img id="img_4.1" src="img/4.1.jpg" alt="" />Картинка 1</label
+              >
+            </div>
+            <div class="four_right_radio">
+              <input
+                type="radio"
+                id="radio-2"
+                name="radio"
+                value="img/4.2.jpg"
+              />
+              <label for="radio-2"
+                ><img id="img_4.2" src="img/4.2.jpg" alt="" />Картинка 2</label
+              >
+            </div>
+            <div class="four_right_radio">
+              <input
+                type="radio"
+                id="radio-3"
+                name="radio"
+                value="img/4.3.jpg"
+              />
+              <label for="radio-3"
+                ><img id="img_4.3" src="img/4.3.jpg" alt="" />Картинка 3</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Пятый блок-->
+      <div class="five container" id="five">
+        <h2>Ответы на вопросы</h2>
+        <!--Выплывающие блоки с ответами-->
+        <div class="five_faq">
+          <div class="five_faq_top">
+            <p>У вас много проектов?</p>
+            <div class="five_faq_plus">
+              <div class="five_faq_icon"></div>
+            </div>
+          </div>
+          <div class="five_faq_sub">
+            Достаточно, чтобы работать и получать удовольствие от работы)
+          </div>
+        </div>
+        <div class="five_faq">
+          <div class="five_faq_top">
+            <p>Есть ли карьерный рост?</p>
+            <div class="five_faq_plus">
+              <div class="five_faq_icon"></div>
+            </div>
+          </div>
+          <div class="five_faq_sub">
+            Карьерный рост есть, но он зависит от тебя. Никто специально тянуть
+            не будет.
+          </div>
+        </div>
+        <div class="five_faq">
+          <div class="five_faq_top">
+            <p>У вас большой штат?</p>
+            <div class="five_faq_plus">
+              <div class="five_faq_icon"></div>
+            </div>
+          </div>
+          <div class="five_faq_sub">Штат небольшой</div>
+        </div>
+        <div class="five_faq">
+          <div class="five_faq_top">
+            <p>Какие цели у вашей студии?</p>
+            <div class="five_faq_plus">
+              <div class="five_faq_icon"></div>
+            </div>
+          </div>
+          <div class="five_faq_sub">
+            Развивать свои продукты в среднем ценовом сегменте. Занять не
+            занятую нишу отличных сайтов по адекватной цене.
+          </div>
+        </div>
+      </div>
+      <!--Шестой блок-->
+      <div class="footer">
+        <!--Фон шестого блока-->
+        <div class="main_six_back">
+          <!--Шестой блок(Форма ОС)-->
+          <div class="six container" id="six">
+            <!--Левая часть блока с текстом и соц. сетями-->
+            <div class="six_left">
+              <h2>Форма ОС</h2>
+              <p class="six_left_title">
+                Сверстай форму обратной связи. Будет круто, если заявки будут
+                приходить сюда: a@growtask.ru
+              </p>
+              <!--Ссылки на соц. сети-->
+              <div class="six_left_links">
+                <p class="six_left_title2">Не забудь вставить соц.сети</p>
+                <div class="six_left_social">
+                  <a
+                    class="six_left_social_vk"
+                    href="https://vk.com/growtask"
+                    target="_ blank"
+                  >
+                    <img src="icon/vk.svg" alt=""
+                  /></a>
+                  <a
+                    class="six_left_social_telegram"
+                    href="https://t.me/growtask"
+                    target="_blank"
+                  >
+                    <img src="icon/telegram.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <!--Правая часть блока с формой-->
+            <form class="six_right" action="#" id="form">
+              <!--Первая строчка инпутов-->
+              <div class="six_right_top">
+                <!--Инпуты-->
+                <input
+                  class="six_right_top_input input req"
+                  type="text"
+                  placeholder="Напиши вопрос*"
+                />
+                <input
+                  class="six_right_top_input input req"
+                  type="text"
+                  placeholder="Телефон или почта*"
+                />
+              </div>
+              <!--Вторая строчка инпутов-->
+              <div class="six_right_middle">
+                <!--Инпуты-->
+                <input
+                  class="six_right_middle_input input req"
+                  type="text"
+                  placeholder="Твоё имя*"
+                />
+                <input
+                  class="six_right_middle_input input req"
+                  type="text"
+                  placeholder="Соц.сеть или мессенджер"
+                />
+              </div>
+              <!--Кнопка отправить и чекбокс-->
+              <div class="six_right_bottom">
+                <input
+                  class="six_right_bottom_submit"
+                  type="submit"
+                  value="Отправить заявку"
+                />
+                <label class="six_right_bottom_check checkbox"
+                  ><input
+                    class="req"
+                    type="checkbox"
+                    value="1"
+                    name="agree"
+                  /><span></span>Согласие с политикой</label
+                >
+              </div>
+            </form>
+            <!--Ссылки на соц. сети для мобильных разрешений-->
+            <div class="six_right_links">
+              <p class="six_left_title2">Не забудь вставить соц.сети</p>
+              <div class="six_left_social">
+                <a
+                  class="six_left_social_vk"
+                  href="https://vk.com/growtask"
+                  target="_ blank"
+                >
+                  <img src="icon/vk.svg" alt=""
+                /></a>
+                <a
+                  class="six_left_social_telegram"
+                  href="https://t.me/growtask"
+                  target="_blank"
+                >
+                  <img src="icon/telegram.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
