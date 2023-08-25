@@ -1,0 +1,17 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 75px;
+  &__img {
+    width: 32px;
+    &--prev {
+      transform: rotate(180deg);
+    }
+  }
+  &__cards {
+    display: flex;
+    align-items: flex-end;
+    gap: 56px;
+  }
+}

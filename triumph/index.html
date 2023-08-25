@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="container">
+          <div class="header__top">
+            <div class="logo">ТРИУМФ</div>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__linl">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__linl">Наши партнеры</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__linl">Каталог продукции</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__linl">Приемущества</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__linl">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__address">
+              г. Нур-Султан, ул. Тлендиева 24 металлоцех бокс 1,2 ватсап
+              <span style="font-weight: 700">+77071093609</span> телефон
+              <span style="font-weight: 700">+77074449968</span>
+            </div>
+          </div>
+          <div class="header__info">
+            <div class="header__title">
+              <h1 class="title">Металлоизделия и художественная ковка</h1>
+            </div>
+            <div class="header__text">
+              <p class="text">
+                Эксклюзивные предметы экстерьера, мебель, скульптура, подарки.
+              </p>
+              <p class="text">
+                Есть идея, а с эксклюзивом никто <br />
+                не может попасть в точку?
+              </p>
+            </div>
+            <a class="btn" href="#!">Обсудить идею</a>
+          </div>
+          <img
+            class="header__border"
+            src="./img/border/main-border.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container">
+        <h2 class="title title2">О компании</h2>
+        <div class="about__info">
+          <div class="about__text">
+            <p class="text">
+              Наша компания работает на рынке с 2014 года. На сегодняшний день
+              мы специализируемся на производстве металлоизделий на заказ и
+              металлоконструкций по индивидуальным чертежам и образцам:
+            </p>
+            <ul class="about__list">
+              <li>художественная ковка</li>
+              <li>услуги кузнеца</li>
+              <li>сварочные работы</li>
+              <li>монтаж и демонтаж</li>
+              <li>аргонная сварка</li>
+              <li>изготовление дизайнов любой сложности</li>
+              <li>полимерное покрытие</li>
+            </ul>
+            <div class="about__btn">
+              <a href="#!" class="btn">Обсудить идею</a>
+            </div>
+          </div>
+          <div class="about__img">
+            <img src="./img/image/img1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <img
+          class="partners__border-l"
+          src="./img/border/card-border-l.png"
+          alt=""
+        />
+        <img
+          class="partners__border-r"
+          src="./img/border/card-border-r.png"
+          alt=""
+        />
+        <div class="partners__title">
+          <h2 class="title title2">Наши партнеры</h2>
+        </div>
+        <ul class="partners__list">
+          <li>DOOR HAN</li>
+          <li>ТОО Ушаково АГРО</li>
+          <li>ТОО "Нуртуган 2030"</li>
+        </ul>
+        <div class="partners__images">
+          <img src="./img/partners/partner1.jpg" alt="" />
+          <img src="./img/partners/partner2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__title">
+          <h2 class="title title2">Каталог продукции</h2>
+        </div>
+        <div class="catalog__filter">
+          <button class="btn__filter btn--active" id="canopy">Козырьки</button>
+          <button class="btn__filter" id="carport">Навесы</button>
+          <button class="btn__filter" id="arbour">Беседки</button>
+          <button class="btn__filter" id="gates">Ворота</button>
+          <button class="btn__filter" id="grating">Решетки</button>
+          <button class="btn__filter" id="ladder">Лестницы</button>
+          <button class="btn__filter" id="grill">Мангалы</button>
+          <button class="btn__filter" id="railings">Перила</button>
+          <button class="btn__filter" id="entrance-group">
+            Входные<br />
+            группы
+          </button>
+          <button class="btn__filter" id="fence">Ограждения</button>
+          <button class="btn__filter" id="other">
+            Другое<br />
+            (урны,<br />
+            лавочки<br />
+            и т.д.)
+          </button>
+        </div>
+        <div class="catalog-active canopy">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card11.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/canopy/card12.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide arbour">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/arbour/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide carport">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/carport/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/carport/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/carport/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/carport/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/carport/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/carport/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/carport/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide entrance-group">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/entrance group/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide fence">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/fence/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide gates">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/gates/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide grating">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grating/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide grill">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/grill/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide ladder">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/ladder/card11.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide railings">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/railings/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog-hide other">
+          <div class="catalog__cards">
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card1.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card2.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card3.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card4.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card5.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card6.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card7.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card8.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card9.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/card/card-border-r.png"
+                alt=""
+                class="card-border-r"
+              />
+              <img src="./img/card/other/card10.jpg" alt="" />
+              <img
+                src="./img/card/card-border-l.png"
+                alt=""
+                class="card-border-l"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="catalog__info">
+          <p class="catalog__text">
+            Оставьте заявку и мы расчитаем стоимость изделия в кратчайшие сроки
+          </p>
+          <a href="#!" class="btn">Оставить заявку</a>
+        </div>
+      </div>
+    </section>
+    <section class="advantage">
+      <div class="advantage-wrapper">
+        <div class="container">
+          <img
+            src="./img/border/main-border.svg"
+            alt=""
+            class="advantage__border--top"
+          />
+          <div class="advantage__title">
+            <h2 class="title title2">Наши приемущества</h2>
+          </div>
+          <div class="advantage__cards">
+            <div class="advantage__card">
+              <img src="./img/advantage/quality.svg" alt="" />
+              <span>Качество</span>
+            </div>
+            <div class="advantage__card advantage__card--time">
+              <img src="./img/advantage/time.svg" alt="" />
+              <span>Оперативность</span>
+            </div>
+            <div class="advantage__card">
+              <img src="./img/advantage/price.svg" alt="" />
+              <span>Низкие <br />цены</span>
+            </div>
+          </div>
+          <img
+            src="./img/border/main-border.svg"
+            alt=""
+            class="advantage__border--bottom"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__title">
+          <h2 class="title title2">Контакты</h2>
+        </div>
+        <div class="contacts__info">
+          <div class="contacts__text">
+            г. Нур-Султан, ул. Тлендиева 24 <br />
+            металлоцех бокс 1,2 <br />График работы — ежедневно с 09:00 до 20:00
+            <br />
+            ватсап <a href="tel:+77071093609">+77071093609</a> <br />
+            телефон <a href="tel:+77074449968">+77074449968</a>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A50eaaae3b079095b20973167903fdddc1a259a90fcd335ead7554251b4636bde&amp;source=constructor"
+              width="739"
+              height="376"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">ТРИУМФ</div>
+      </div>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

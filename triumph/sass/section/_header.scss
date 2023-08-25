@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  height: 836px;
+  background-color: #181715;
+  &-wrapper {
+    height: 100%;
+    background-image: url("./../img/background/header-bg.jpg");
+    background-size: cover;
+  }
+  &__border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 19px;
+  }
+  &__address {
+    width: 210px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &__info {
+    padding-top: 2px;
+  }
+  &__title {
+    width: 584px;
+    margin-bottom: 26px;
+  }
+  &__text {
+    width: 491px;
+    margin-bottom: 62px;
+  }
+}

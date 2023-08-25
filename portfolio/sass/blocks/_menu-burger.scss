@@ -1,0 +1,47 @@
+.mobile-menu {
+  position: relative;
+  z-index: 202;
+  display: none;
+  align-items: center;
+  height: 25px;
+  /*Mobile*/
+  @media (max-width: 899px) {
+    display: flex;
+  }
+}
+.menu-burger {
+  position: relative;
+  width: 40px;
+  height: 5px;
+  background-color: #000000;
+  transition: 0.2s ease-in;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    background: #000000;
+  }
+  &::before {
+    top: -10px;
+    transition: 0.2s linear;
+  }
+  &::after {
+    bottom: -10px;
+    transition: 0.2s linear;
+  }
+  &__active{
+    background-color: transparent;
+    &::before{
+      top: 0;
+      rotate: 45deg;
+    }
+    &::after{
+      top: 0;
+      rotate: -45deg;
+    }
+  }
+}

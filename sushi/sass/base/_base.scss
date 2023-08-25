@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $black-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "Plus Jakarta Sans";
+}
+
+//Tipography
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 88px;
+  color: $black-main;
+  /*Mobile*/
+  @media (max-width: 1365px) {
+    font-size: 32px;
+  }
+}
+h2 {
+  font-size: 64px;
+  /*Mobile*/
+  @media (max-width: 1365px) {
+    font-size: 28px;
+  }
+}
+h3 {
+  font-size: 56px;
+  /*Mobile*/
+  @media (max-width: 1365px) {
+    font-size: 24px;
+  }
+}
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  /*Mobile*/
+  @media (max-width: 1365px) {
+    font-size: 24px;
+  }
+}
+p {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 400;
+  color: $black-main;
+  opacity: 0.8;
+}
+
+//Container
+.container {
+  max-width: 1310px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /*Tablet*/
+  @media (max-width: 1451px) {
+    width: 1366px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  /*Mobile*/
+  @media (max-width: 1365px) {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  /*Mobile XS*/
+  @media (max-width: 767px) {
+    width: 374px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+//body
+.noscroll {
+  overflow: hidden;
+}

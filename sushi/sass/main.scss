@@ -1,0 +1,20 @@
+//Base
+@import "./base/vars";
+@import "./base/base";
+
+//Section
+@import "./section/header";
+@import "./section/main";
+@import "./section/about";
+@import "./section/food";
+@import "./section/reccomend";
+@import "./section/subscription";
+@import "./section/footer";
+
+//Blocks
+@import "./blocks/btn";
+@import "./blocks/title";
+@import "./blocks/feedback";
+@import "./blocks/filter";
+@import "./blocks/slider";
+@import "./blocks/card";

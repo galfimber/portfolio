@@ -1,0 +1,77 @@
+.subscription {
+  position: relative;
+  background-color: $red-main;
+  padding-top: 99px;
+  padding-bottom: 99px;
+  text-align: center;
+  overflow: hidden;
+  &__bg--left,
+  &__bg--right {
+    position: absolute;
+    color: $white-main;
+    font-size: 240px;
+    font-weight: 700;
+    opacity: 0.05;
+    line-height: 276px;
+  }
+  &__bg--left {
+    right: calc(50% + 420px);
+    top: -370px;
+  }
+  &__bg--right {
+    left: calc(50% + 420px);
+    top: -87px;
+  }
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 748px;
+    color: $white-main;
+    margin-bottom: 32px;
+    .title {
+      font-size: 88px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+    .subtitle {
+      color: $white-main;
+    }
+  }
+  &__input {
+    width: 481px;
+    height: 88px;
+    border-radius: 46px;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.05);
+    outline: none;
+    padding-left: 24px;
+    padding-right: 208px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 200%;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+    }
+    &--wrapper {
+      max-width: 481px;
+      max-height: 88px;
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .btn__black {
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: $black-light-main;
+  }
+}

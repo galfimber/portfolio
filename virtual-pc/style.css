@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.main {
+  width: 1920px;
+  height: 969.4px;
+  background-image: url(main-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: none;
+}
+.main__window {
+  position: absolute;
+  top: 178px;
+  left: 538px;
+  width: 899px;
+  height: 561px;
+  border-radius: 4px;
+  background-image: url(main-window.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.google-icon {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 522px;
+  left: 286px;
+  border-radius: 8px;
+  border: none;
+  background-image: url(google-icon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-out;
+}
+.google-icon:hover {
+  transform: translate(0, -10%);
+}
+.google-icon:active .google {
+  display: block;
+}
+.google {
+  position: absolute;
+  top: 700px;
+  left: 840px;
+  width: 0;
+  height: 0;
+  border-radius: 4px;
+  background-image: url(google.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all .3s ease-out;
+}
+.google.active {
+  width: 898px;
+  height: 548px;
+  top: 190px;
+  left: 539px;
+}
+.google__close {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  top: 13px;
+  left: 16px;
+  background-color: red;
+  transition: all .3s ease-out;
+}
+.google__close.active {
+  width: 10px;
+  height: 10px;
+}
+.main__time{
+  position: absolute;
+  top: 178px;
+  left: 1340px;
+  background-color: #fff;
+  font-size: 10px;
+}
+.main__date{
+  position: absolute;
+  top: 178px;
+  left: 1312px;
+  background-color: #fff;
+  font-size: 10px;
+}
+
+
+.follow-cursor {
+  display: block;
+  width: 25px;
+  height: 25px;
+  transform: translateY(-8%) translateX(-20%);
+  background-image: url(cursor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+  z-index: 999; /* чтобы элемент был над остальными элементами */
+  pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+}
+.follow-cursor_active {
+  background-image: url(cursor-pointer.png);
+  width: 30px;
+  height: 30px;
+}

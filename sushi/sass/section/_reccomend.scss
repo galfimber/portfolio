@@ -1,0 +1,127 @@
+.reccomend {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__discover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $black-main;
+    color: $white-main;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+  }
+  &__img--up,
+  &__img--bottom,
+  &__img--left,
+  &__img--right {
+    position: absolute;
+    z-index: 2;
+  }
+  &__img--up {
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  &__img--bottom {
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  &__img--left {
+    top: 50%;
+    right: calc(50% + 150px);
+    transform: translate(0, -50%);
+  }
+  &__img--right {
+    top: 50%;
+    left: calc(50% + 150px);
+    transform: translate(0, -50%);
+  }
+  &__row {
+    display: flex;
+  }
+  &__col {
+    width: 50%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__yellow {
+    position: relative;
+    background-color: $yellow-main;
+    align-items: center;
+  }
+  &__bg--top,
+  &__bg--bottom {
+    position: absolute;
+    top: 64px;
+    color: $red-main;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 138px;
+    opacity: 0.1;
+  }
+  &__bg--top {
+    right: 80px;
+  }
+  &__bg--bottom {
+    left: 80px;
+  }
+  &__description {
+    margin-left: 80px;
+    &:first-child {
+      margin-left: auto;
+      margin-right: 130px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 16px;
+    letter-spacing: -0.18px;
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__text {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: -0.18px;
+    opacity: 0.8;
+  }
+  &__list {
+    width: 365px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &__item {
+    min-width: 174.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $red-main;
+  }
+}

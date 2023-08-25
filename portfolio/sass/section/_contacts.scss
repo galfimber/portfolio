@@ -1,0 +1,122 @@
+.contacts {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: linear-gradient(0deg, #f5fbff, #f5fbff), #f4f8f9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 87px;
+    right: 56px;
+    display: block;
+    width: 280px;
+    height: 243px;
+    background-image: url("./../img/contacts/contacts-icon.svg");
+  }
+  &-wrapper {
+    .title {
+      display: block;
+      text-align: center;
+    }
+  }
+  &-row {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 55px;
+  }
+
+  &__info {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 32px;
+  }
+  &__links {
+    flex-shrink: 0;
+  }
+  &__link + &__link {
+    margin-top: 22px;
+  }
+  &__link {
+    span {
+      display: inline-block;
+      min-width: 108px;
+      margin-right: 80px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    a {
+      line-height: 1.6;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  /*Tablet*/
+  @media (max-width: 1139px) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    &::before {
+      top: 0px;
+      right: 0px;
+    }
+    &__info {
+      margin-bottom: 21px;
+    }
+    &__link + &__link {
+      margin-top: 16px;
+    }
+    &__link {
+      span {
+        min-width: 85px;
+        margin-right: 35px;
+        font-size: 18px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    padding-bottom: 40px;
+    &__info {
+      margin-bottom: 28px;
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+    }
+    &__link {
+      span {
+        min-width: auto;
+        margin-right: 0px;
+        font-size: 16px;
+      }
+    }
+    &__link + &__link {
+      margin-top: 10px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &::before {
+      display: none;
+    }
+  }
+  /*Mobile XS*/
+  @media (max-width: 767px) {
+    &-row {
+      flex-direction: column;
+      row-gap: 49px;
+    }
+    &__info {
+      row-gap: 20px;
+    }
+  }
+}

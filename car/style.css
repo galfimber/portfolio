@@ -1,0 +1,1270 @@
+@font-face {
+  font-family: "Reformagroteskmediumc";
+  src: url(font/ReformaGroteskMediumC.ttf);
+}
+@font-face {
+  font-family: "Reformagroteskboldc";
+  src: url(font/ReformaGroteskBoldC.ttf);
+}
+@font-face {
+  font-family: "Reformagroteskdemic";
+  src: url(font/ReformaGroteskDemiC.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-image: url(img/back/nav-back.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.container {
+  margin: 0 312px;
+}
+.nav ul {
+  margin: 0;
+  padding: 40px 0 0 0;
+  display: flex;
+}
+.nav li {
+  list-style: none;
+  font-family: "Reformagroteskmediumc";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+}
+.nav li:not(:last-child) {
+  margin-right: 40px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  color: #db3138;
+}
+.nav a:active {
+  color: #800b0f;
+}
+.nav_menu_burger{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #141414;
+  border: 1px solid #db3138;
+  z-index: 3;
+}
+.burger {
+  width: 20px;
+  height: 14px;
+  display: block;
+  position: relative;
+}
+.burger span {
+  position: absolute;
+  background-color: #ffffff;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 6px;
+  transition: all 0.5s ease;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  font-family: "Reformagroteskboldc";
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 112%;
+  color: #db3138;
+  letter-spacing: 0.03em;
+  margin: 168px 0 0 0;
+  padding: 0;
+  height: 188px;
+  text-align: center;
+}
+.under-h1 {
+  display: flex;
+  justify-content: center;
+}
+.cubes {
+  margin-top: 6px;
+}
+.cubes:not(:last-child) {
+  margin-right: 30px;
+}
+.cube {
+  width: 10px;
+  height: 10px;
+  background: #db3138;
+  transform: rotate(-45deg);
+}
+.h1-title {
+  font-family: "Reformagroteskmediumc";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: white;
+  width: 437px;
+  text-align: center;
+}
+.services {
+  background: linear-gradient(to right, #db3138 110px, transparent 50%);
+  position: relative;
+  width: 169px;
+  height: 61px;
+}
+.services:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #ad0f14 110px, transparent 50%);
+}
+.services:active {
+  background: linear-gradient(to right, #800b0f 110px, transparent 50%);
+}
+.services a {
+  position: absolute;
+  width: 120px;
+  margin: 15px 25px;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+.table {
+  margin-top: 103px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.table span {
+  color: #db3138;
+}
+.table td {
+  width: 33.333%;
+  height: 214px;
+  text-align: center;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-top: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+}
+.td-center {
+  border: 1px solid #898989;
+}
+.achievements-back {
+  background: #141414;
+}
+.achievements {
+  padding-top: 180px;
+  display: flex;
+  flex-direction: row;
+}
+.achievements-left {
+  margin-right: 12px;
+  width: 50%;
+}
+.achievements-left-cubes {
+  display: flex;
+  margin: 40px 0 60px 0;
+}
+.achievements-left-h2 {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.achievements-left-p {
+  margin-right: 17%;
+  font-family: "Reformagroteskmediumc";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.achievements-right {
+  display: flex;
+  margin-left: 12px;
+  width: 50%;
+}
+.achievements-right-table {
+  border-collapse: collapse;
+  text-align: center;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.achievements-right-table td {
+  border: 1px solid #898989;
+  padding: 25px 20px 35px 20px;
+}
+.achievements-right-table p {
+  margin: 18px 0 0 0;
+}
+.achievements-right-table h2 {
+  display: inline;
+  font-size: 50px;
+}
+.achievements-right-table span {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #db3138;
+}
+.achievements-right-table img {
+  height: 36.2px;
+}
+.table1 {
+  margin-bottom: 40px;
+}
+.table2 {
+  margin-top: 40px;
+}
+.carousel {
+  background: #141414;
+  padding-top: 180px;
+  position: relative;
+}
+.image-slider_slide {
+  width: 32%;
+}
+.slide {
+  width: 100%;
+  height: 420px;
+}
+.slide1 {
+  width: 100%;
+  height: 350px;
+  background-image: url(img/slider/slide1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: visible;
+}
+.slide2 {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-image: url(img/slider/slide2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide3 {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-image: url(img/slider/slide3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide4 {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-image: url(img/slider/slide4\ .jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide-title {
+  position: absolute;
+  overflow: visible;
+  left: 6%;
+  bottom: -35px;
+  width: 88%;
+  height: 70px;
+  background: #db3138;
+}
+.slide-title p {
+  width: 78%;
+  height: 75px;
+  text-align: center;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 30px 11% 0 11%;
+  padding: 0;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #db3138;
+  transform: rotate(-45deg);
+  position: absolute;
+  background: #141414;
+}
+.btn:hover {
+  cursor: pointer;
+  border: 3px solid #ad0f14;
+}
+.btn:active {
+  border: 3px solid #800b0f;
+}
+.prev {
+  left: 181px;
+  top: 365px;
+}
+.next {
+  right: 181px;
+  top: 365px;
+}
+.arrow {
+  width: 21px;
+  height: 21px;
+  background-image: url(img/icon/slider-btn.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.left {
+  transform: rotate(45deg);
+  margin-left: 25%;
+  margin-top: 25%;
+}
+.right {
+  transform: rotate(-135deg);
+  margin-left: 33.333%;
+  margin-top: 30%;
+}
+.description {
+  background: #141414;
+  min-width: 0;
+  padding-bottom: 100px;
+  padding-top: 180px;
+}
+.description-left {
+  margin-right: 58.5px;
+}
+.description-main {
+  display: flex;
+  justify-content: space-between;
+}
+.description-left-paragraph {
+  font-family: "Reformagroteskmediumc";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.description-left-paragraph-head {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.description-left-paragraph-head h2 {
+  margin: 14px 0 0 30px;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.description-left-cubes {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.description-right {
+  margin-left: 58.5px;
+  width: 49%;
+  position: relative;
+}
+.description-slider_slide {
+  position: relative;
+  width: 100%;
+  height: 736px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description-slider_slide p {
+  margin: 50px 0 0 0;
+  width: 66%;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.description-slide1 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider/slide1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide2 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider/slide2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide3 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider/slide3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide4 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider/slide4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide5 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider/slide5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.next2 {
+  right: 11px;
+  top: 600px;
+  z-index: 10;
+}
+.prev2 {
+  left: 11px;
+  top: 600px;
+  z-index: 10;
+}
+.work {
+  background: #141414;
+}
+.work-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work-main h2 {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.work-left-cubes {
+  display: flex;
+}
+.work-btns {
+  display: flex;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.work-btn {
+  margin-top: 60px;
+  padding: 20px 40px 10px 40px;
+  background: none;
+}
+.work-btn:not(:last-child) {
+  margin-left: 30px;
+  margin-right: 60px;
+}
+.work-btn:hover {
+  cursor: pointer;
+  background: #ad0f14;
+}
+.work-btn:active {
+  background: #800b0f;
+}
+.work-btn.active {
+  background: #db3138;
+}
+.work-btn.active:hover {
+  background: #ad0f14;
+}
+.work-btn.active:active {
+  background: #800b0f;
+}
+.work-cards {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+}
+.work-cards1{
+  display: flex;
+  width: 50%;
+  min-width: 516px;
+  margin-right: 24px;
+}
+.work-cards2{
+  display: flex;
+  width: 50%;
+  min-width: 516px;
+}
+.cards-pasting {
+  display: none;
+}
+.cards-pasting.active {
+  display: flex;
+}
+.cards-detailing {
+  display: none;
+}
+.cards-detailing.active {
+  display: flex;
+}
+.card:not(:last-child) {
+  margin-right: 24px;
+}
+.card {
+  margin-top: 80px;
+  width: 50%;
+  min-height: 316px;
+  border: 1px solid #898989;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 37.875px 50px 37.875px;
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card h3 {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+.card p {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 20px 0 35px 0;
+}
+.card-btn {
+  width: 113px;
+  height: 41px;
+  background: linear-gradient(to right, #db3138 58px, transparent 50%);
+}
+.card-title a {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  text-decoration: none;
+  width: 103px;
+  height: 36px;
+  background: linear-gradient(to right, #db3138 58px, transparent 50%);
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.card-title a:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #ad0f14 58px, transparent 50%);
+}
+.card-title a:active {
+  background: linear-gradient(to right, #800b0f 58px, transparent 50%);
+}
+.right2 {
+  margin: 0;
+  margin-right: 58.5px;
+}
+.left2 {
+  margin-left: 58.5px;
+  margin-right: 0;
+}
+.description-slide2-1 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider2/slide1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide2-2 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider2/slide2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide2-3 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider2/slide3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide2-4 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider2/slide4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.description-slide2-5 {
+  width: 100%;
+  height: 550px;
+  background-image: url(img/description-slider2/slide5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.next3 {
+  right: 11px;
+  top: 600px;
+  z-index: 10;
+}
+.prev3 {
+  left: 11px;
+  top: 600px;
+  z-index: 10;
+}
+.our-works {
+  background: #141414;
+  padding-top: 80px;
+}
+.our-works-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.our-works-main h2 {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+}
+.wall-pic {
+  width: 100%;
+}
+.wall-pic img {
+  margin-right: -4px;
+  margin-bottom: -4px;
+  width: 16.666%;
+}
+.question {
+  background: #141414;
+}
+.question-main {
+  padding: 120px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question-main h2 {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input,
+textarea {
+  background: #141414;
+  border: 1px solid #898989;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #898989;
+  padding-left: 25px;
+  outline: none;
+}
+form input:hover,
+textarea:hover {
+  border: 1px solid #db3138;
+}
+form input:focus,
+textarea:focus {
+  border: 1px solid #db3138;
+  color: #ffffff;
+}
+form input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #ffffff;
+}
+.input1 input {
+  width: 277px;
+  height: 43px;
+  margin-top: 60px;
+}
+.input1 input:not(:last-child) {
+  margin-right: 24px;
+}
+.input2 {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+}
+.input2-text textarea {
+  width: 497px;
+  height: 130px;
+  padding-top: 16px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.link {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #898989;
+}
+.link:hover {
+  border: 1px solid #db3138;
+}
+.link:not(:last-child) {
+  margin-bottom: 15px;
+}
+.link1 {
+  background-image: url(img/icon/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.link2 {
+  background-image: url(img/icon/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.link3 {
+  background-image: url(img/icon/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.input3 {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.input3 input {
+  background: linear-gradient(to right, #db3138 71px, transparent 50%);
+  border: none;
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.input3 input:hover {
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #ad0f14 71px, transparent 50%);
+}
+.input3 input:active {
+  background: linear-gradient(to right, #800b0f 71px, transparent 50%);
+}
+.contacts a {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+.contacts a:hover {
+  color: #db3138;
+}
+.contacts img {
+  margin-right: 14px;
+}
+.contacts2 {
+  display: flex;
+  justify-content: end;
+}
+.contacts2 a:not(:last-child) {
+  margin-right: 34px;
+}
+.footer-line {
+  border: 1px solid #898989;
+}
+.footer {
+  background: #141414;
+}
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-main p {
+  font-family: "Reformagroteskdemic";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-right: 20px;
+}
+.footer-nav ul {
+  padding: 0;
+}
+.footer-nav li {
+  font-family: "Reformagroteskmediumc";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.upbtn {
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: -80px;
+  right: 20px;
+  cursor: pointer;
+  border: 3px solid #db3138;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upbtn:hover {
+  border: 3px solid #ad0f14;
+}
+.up-arrow {
+  width: 50px;
+  height: 50px;
+  background-image: url(img/icon/upbtn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1440px) {
+  .container {
+    margin: 0 220px;
+  }
+  .prev {
+    left: 140px;
+  }
+  .next {
+    right: 140px;
+  }
+  .upbtn {
+    right: 60px;
+  }
+  .work-cards1{
+    min-width: 636px;
+  }
+  .work-cards2{
+    min-width: 636px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    margin: 0 120px;
+  }
+  .achievements {
+    display: block;
+  }
+  .achievements-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .achievements-left h2 {
+    text-align: center;
+  }
+  .achievements-left p {
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+  .achievements-right {
+    width: 100%;
+    margin-left: 0;
+  }
+  .achievements-right-table{
+    width: 50%;
+  }
+  .prev,
+  .next {
+    display: none;
+  }
+  .description-main {
+    display: block;
+  }
+  .description-left {
+    margin-right: 0;
+  }
+  .description-left-paragraph {
+    text-align: center;
+  }
+  .description-left-paragraph-head {
+    justify-content: center;
+  }
+  .description-right {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  .description-slider_slide p {
+    margin: 20px 0 0 0;
+    width: 80%;
+  }
+  .right2 {
+    margin: 0 0 40px 0;
+  }
+  .left2 {
+    margin: 0;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    margin: 0 80px;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav ul{
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    padding: 64px 0 0 80px;
+    transition: all 0.3s ease;
+  }
+  .nav ul.active{
+    top: 0;
+    background: #141414;
+  }
+  .nav li{
+    font-size: 36px;
+  } 
+  .nav_menu_burger{
+    display: flex;
+  }
+  .burger.active::before {
+    transform: rotate(45deg);
+    top: 6px;
+  }
+  .burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 6px;
+  }
+  .burger.active span {
+    transform: scale(0);
+  }
+  .logo {
+    height: auto;
+  }
+  .achievements{
+    padding-top: 80px;
+  }
+  .description{
+    padding-top: 80px;
+  }
+  .right2{
+    margin-bottom: 60px;
+  }
+  .our-works{
+    padding-top: 0;
+  }
+  .wall-pic img:first-child, .wall-pic img:last-child{
+    display: none;
+  }
+  .wall-pic img{
+    width: 25%;
+  }
+  .footer-nav{
+    display: none;
+  }
+  .question-main h2{
+    font-size: 45px;
+  }
+  form{
+    width: 100%;
+  }
+  .input1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .input1 input{
+    margin: 0 0 40px 0;
+    width: 93.5%;
+    height: 60px;
+    font-size: 20px;
+  }
+  .input2{
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .input2-text{
+    width: 100%;
+  }
+  .input2-text textarea{
+    font-size: 20px;
+    width: 93.5%;
+  }
+  .links{
+    margin: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .link{
+    margin: 40px 15px 0 0;
+    width: 60px;
+    height: 60px;
+  }
+  .contacts a{
+    font-size: 22px;
+  }
+}
+@media(max-width:680px){
+  .carousel{
+    padding-top: 100px;
+  }
+  .prev2, .next2, .prev3, .next3{
+    display: none;
+  }
+  .work-btns{
+    width: 100%;
+  }
+  .work-btn:not(:last-child){
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .work-btn{
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+  }
+  .work-btns{
+    font-size: 24px;
+    justify-content: center;
+  }
+  .input3{
+    flex-direction: column;
+    align-items: center;
+  }
+  .input3 input{
+    width: 144px;
+    height: 58px;
+    padding-left: 0;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .question-main{
+    padding-top: 80px;
+  }
+}
+.upbtn{
+  right: 15px;
+}
+@media(max-width:420px){
+  .container{
+    margin: 0 30px;
+  }
+  .logo{
+    margin-top: 80px;
+    font-size: 110px;
+  }
+  .h1-title{
+    font-size: 30px;
+    font-weight: 400;
+    width: 100%;
+  }
+  .table td{
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .achievements-left-h2{
+    font-size: 40px;
+  }
+  .achievements-left-cubes{
+    margin: 30px 0 40px 0;
+  }
+  .achievements-left-p{
+    font-weight: 400;
+  }
+  .description{
+    padding-bottom:80px;
+  }
+  .description-slide1{
+    height: 400px;
+  }
+  .description-slide2{
+    height: 400px;
+  }
+  .description-slide3{
+    height: 400px;
+  }
+  .description-slide4{
+    height: 400px;
+  }
+  .description-slide5{
+    height: 400px;
+  }
+  .description-left-paragraph-head h2{
+    font-size: 28px;
+  }
+  .work-main h2{
+    font-size: 40px;
+  }
+  .work-btn{
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+  }
+  .work-btns{
+    font-size: 24px;
+    justify-content: center;
+  }
+  .work-cards1{
+    min-width: 570px;
+  }
+  .card{
+    width: 40%;
+  }
+  .our-works-main h2{
+    font-size: 40px;
+  }
+  .question-main h2{
+    font-size: 40px;
+    text-align: center;
+  }
+  .input1{
+    margin-top: 40px;
+  }
+  .input1 input:not(:last-child){
+    margin-right: 0;
+  }
+  .contacts2 a:not(:last-child){
+    margin-right: 0;
+  }
+  .contacts2{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  .upbtn{
+    right: 15px;
+  }
+}

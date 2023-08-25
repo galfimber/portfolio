@@ -1,0 +1,82 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 31px;
+  text-align: center;
+  padding-left: 59px;
+  padding-right: 59px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 64px;
+  &__black {
+    background-color: $black-main;
+    color: $white-main;
+    transition: box-shadow 0.2s ease-out;
+    &:hover {
+      box-shadow: 0 0 10px $black-light-main;
+    }
+  }
+  &__secondary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #020202;
+    font-size: 16px;
+    font-weight: 400;
+    img{
+      transition: 0.2s ease-out;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__half {
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 31px 0 0 31px;
+  }
+  &__filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 31px;
+    padding-left: 31px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: -0.2px;
+    color: $white-main;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 46px;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    &:hover {
+      background-color: $white-main;
+      color: $red-main;
+    }
+    &--active {
+      background-color: $white-main;
+      color: $red-main;
+    }
+  }
+  &__circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 46px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    &:hover {
+      background-color: $white-main;
+      color: $red-main;
+    }
+  }
+}

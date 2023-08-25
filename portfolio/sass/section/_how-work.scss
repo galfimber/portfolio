@@ -1,0 +1,19 @@
+.how-work {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Tablet*/
+  @media (max-width: 1139px) {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

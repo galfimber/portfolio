@@ -1,0 +1,57 @@
+@mixin section($fd, $bg, $color) {
+  display: flex;
+  flex-direction: $fd;
+  background-color: $bg;
+  color: $color;
+}
+
+@mixin _img($url, $mr, $ml) {
+  height: 86%;
+  margin: 0 $mr 0 $ml;
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin _subtitle($jc) {
+  height: 14%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: $jc;
+}
+
+@mixin -wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+@mixin text($fz) {
+  margin-bottom: 21px;
+  font-size: $fz;
+}
+
+@mixin link($color) {
+  height: 23px;
+  position: relative;
+  font-size: 12px;
+  color: $color;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-color: $color;
+  }
+  &:hover {
+    &::before {
+      animation: link-anim 0.3s ease-in;
+    }
+  }
+}

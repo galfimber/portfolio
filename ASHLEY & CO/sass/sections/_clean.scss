@@ -1,0 +1,27 @@
+.clean {
+  @include section(row, $main-gray, $main-black);
+  &__col {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: flex-end;
+    transform: scale(0.2);
+    opacity: 0;
+    transition: all 0.8s ease-out;
+    &.anim-active {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  &__snitiser {
+    background-image: url(./../image/img/img3.jpg);
+    background-size: cover;
+  }
+  &__washup {
+    background-image: url(./../image/img/img4.jpg);
+    background-size: cover;
+  }
+  .link {
+    @include link($main-black);
+  }
+}

@@ -1,0 +1,219 @@
+@media (max-width: 599px) {
+    /*Header*/
+    .logo {
+      font-size: 30px;
+    }
+    .header-title {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .header-content p {
+      font-size: 18px;
+    }
+    .header-menu {
+      margin-right: 7px;
+    }
+    /*Header-inner*/
+    .header-inner .header-menu {
+      margin-right: 5px;
+    }
+    /*Main*/
+    .container {
+      width: 320px;
+    }
+    .main .container {
+      width: 100%;
+    }
+    .main {
+      padding: 40px 0;
+    }
+    .main-row {
+      flex-direction: column-reverse;
+    }
+    .main-row:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    .main-row:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+    .main-img {
+      width: auto;
+      height: 150px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .main-content-header {
+      font-size: 34px;
+    }
+    /*Main-inner*/
+    .main-inner-header {
+      margin-bottom: 30px;
+    }
+    .main-inner-header .main-content-header {
+      font-size: 28px;
+      line-height: 1;
+    }
+    /*Tours-main*/
+    .card {
+      width: 290px;
+    }
+    .card.big {
+      width: 290px;
+    }
+    .card.small {
+      width: 290px;
+    }
+    .cards-row {
+      row-gap: 20px;
+    }
+    .cards-column {
+      row-gap: 20px;
+    }
+    .cards-row + .cards-row {
+      margin-top: 20px;
+    }
+    .card-title-wrapper {
+      height: 50px;
+      padding: 12px 15px;
+    }
+    .card-title {
+      font-size: 20px;
+    }
+    /*Tracking-main*/
+    .tracking .container {
+      width: auto;
+    }
+    .main-inner.tracking {
+      padding-bottom: 40px;
+    }
+    .article-page-article {
+      margin-bottom: 30px;
+    }
+    .article-page-article h1 {
+      line-height: 1.28;
+    }
+    .article-page-article > h2,
+    h3 {
+      line-height: 1;
+    }
+    .article-page-article h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .article-page-nav-title {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+    .article-page-nav-list a {
+      font-size: 16px;
+      padding: 7px 0;
+    }
+    /*Contacts-main*/
+    .main-contacts .container {
+      width: auto;
+    }
+    .main-header {
+      font-size: 28px;
+      line-height: 1;
+    }
+    .contact-block:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .contact-block-title {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .contact-list {
+      font-size: 16px;
+      line-height: 1.3;
+    }
+    .contact-list li::before{
+      top: 0;
+    }
+    .contact-block-title-map {
+      font-size: 20px;
+    }
+    .map {
+      height: 157px;
+    }
+    .contact-info {
+      margin-bottom: 30px;
+    }
+    .form {
+      padding: 20px 15px 30px;
+    }
+    .form-title {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+    .form-group-title {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group-row {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .form-group:last-of-type {
+      margin-bottom: 20px;
+    }
+    .input {
+      padding: 0 15px;
+    }
+    .radio-row:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    .radio-row {
+      font-size: 16px;
+    }
+    .checkbox-row:not(:last-child) {
+      margin-bottom: 21px;
+    }
+    .checkbox-row {
+      font-size: 16px;
+    }
+    .submit {
+      padding: 0 35px;
+    }
+    /*Footer*/
+    .footer-row {
+      text-align: center;
+      row-gap: 40px;
+    }
+    .footer-logo {
+      margin-bottom: 10px;
+    }
+    .footer-widgets {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-info,
+    .footer-services,
+    .footer-contacts {
+      width: 100%;
+    }
+    .footer-services {
+      display: block;
+    }
+    .footer-widget:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    .footer-widget-header {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .footer-list {
+      font-size: 16px;
+      line-height: 1.3;
+    }
+    .footer-item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .footer-widget.footer-contacts .footer-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }

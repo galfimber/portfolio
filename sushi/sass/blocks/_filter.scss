@@ -1,0 +1,11 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 64px;
+  &__img {
+    width: 43px;
+    height: 32px;
+  }
+}

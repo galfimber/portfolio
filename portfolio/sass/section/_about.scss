@@ -1,0 +1,66 @@
+.about {
+  margin-top: -79px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  &-row {
+    width: 1025px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  &__skills {
+    line-height: 1.3;
+  }
+  &__list {
+    font-weight: 400;
+    font-size: 22px;
+    li::before {
+      content: "—";
+      display: inline-block;
+      padding-right: 8px;
+    }
+    li + li {
+      margin-top: 10px;
+    }
+  }
+  /*Tablet*/
+  @media (max-width: 1139px) {
+    margin-top: -45px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    &-row {
+      width: 843px;
+    }
+    &__list {
+      font-size: 18px;
+      li::before {
+        padding-right: 6px;
+      }
+    }
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    margin-top: -42px;
+    padding-top: 27px;
+    padding-bottom: 40px;
+    &-row {
+      width: 655px;
+    }
+    &__list {
+      font-size: 16px;
+      li::before {
+        display: none;
+      }
+    }
+  }
+  /*Mobile XS*/
+  @media (max-width: 767px) {
+    margin-top: 0px;
+    padding-top: 10px;
+    &-row {
+      width: auto;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+}

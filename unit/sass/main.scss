@@ -1,0 +1,18 @@
+//Base
+@import "./base/vars";
+@import "./base/base";
+
+//Section
+@import "./section/header";
+@import "./section/main";
+@import "./section/footer";
+
+//Blocks
+@import "./blocks/nav";
+@import "./blocks/btn";
+@import "./blocks/form";
+@import "./blocks/title";
+@import "./blocks/widget";
+@import "./blocks/card";
+@import "./blocks/feedback";
+@import "./blocks/pagination";

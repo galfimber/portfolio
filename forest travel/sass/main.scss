@@ -1,0 +1,24 @@
+//Base
+@import "./base/base";
+
+//Blocks
+@import "./blocks/btn";
+@import "./blocks/logo";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/footer";
+@import "./blocks/card";
+@import "./blocks/form";
+@import "./blocks/radio";
+@import "./blocks/checkbox";
+
+//Inner-page
+@import "./inner-page/contacts";
+@import "./inner-page/tours";
+@import "./inner-page/tracking";
+
+//Media
+@import "./media/tablet";
+@import "./media/mobile";
+@import "./media/mobile-xs";
+

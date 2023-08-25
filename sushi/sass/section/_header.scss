@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    flex: 0.625;
+    padding-top: 48px;
+  }
+  &__menu {
+    padding-right: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 64px;
+  }
+  &__item {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease-in;
+    &:not(:last-child):hover {
+      border-bottom: 3px solid $red-main;
+      transition: border-bottom 0.1s ease-out;
+    }
+    &:last-child:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.logo {
+  padding-top: 48px;
+  flex: 0.375;
+  background-color: $red-main;
+  &__text {
+    padding-left: 80px;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 700;
+    color: $white-main;
+  }
+}

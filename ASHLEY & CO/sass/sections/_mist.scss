@@ -1,0 +1,26 @@
+.mist {
+  @include section(row, $main-gray-light, $main-black);
+  @include _img("./../image/img/img7.jpg", 0, 0);
+  height: 100vh;
+  &__info {
+    width: 330px;
+    &--wrapper {
+      @include -wrapper();
+    }
+  }
+  &__text {
+    padding-top: 79px;
+  }
+  .text {
+    @include text(16px);
+  }
+  .link {
+    @include link($main-black);
+  }
+  &__title {
+    margin-bottom: 11px;
+  }
+  &__subtitle {
+    margin-bottom: 39px;
+  }
+}

@@ -1,0 +1,40 @@
+.hand-wash {
+  @include section(row-reverse, #504b4d, $main-gray);
+  &__product {
+    flex: 3;
+  }
+  &__img {
+    @include _img("./../image/img/img8.jpg", 0, 15px);
+    transform: translateX(40%);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    &.anim-active {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  &__subtitle {
+    @include _subtitle(flex-end);
+  }
+  &__info {
+    flex: 1;
+    &--wrapper {
+      @include -wrapper();
+    }
+  }
+  &__text {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    &.anim-active {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .text {
+    @include text(15px);
+  }
+  .link {
+    @include link($main-gray);
+  }
+}

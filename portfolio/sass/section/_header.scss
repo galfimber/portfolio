@@ -1,0 +1,129 @@
+.header {
+  padding-top: 62px;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bg {
+    margin-top: -156px;
+    position: relative;
+    z-index: -2;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Tablet*/
+  @media (max-width: 1139px) {
+    padding-top: 40px;
+    &__bg {
+      margin-top: -82px;
+      max-width: 900px;
+    }
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    padding-top: 10px;
+    &__bg {
+      margin-top: -89px;
+      max-width: 768px;
+    }
+  }
+  /*Mobile XS*/
+  @media (max-width: 767px) {
+    &-wrapper {
+      flex-direction: column;
+    }
+    &__bg {
+      margin-top: 0px;
+      max-width: 320px;
+    }
+  }
+}
+.header-info {
+  width: 542px;
+  padding-top: 19px;
+  &__text {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  &__text + &__text {
+    margin-top: 15px;
+  }
+  &__btns {
+    margin-top: 30px;
+    a + a {
+      margin-left: 20px;
+    }
+  }
+  /*Tablet*/
+  @media (max-width: 1139px) {
+    width: 420px;
+    padding-top: 8px;
+    &__text {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    &__btns {
+      margin-top: 28px;
+    }
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    width: 354px;
+    padding-top: 39px;
+    &__text {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    &__btns {
+      display: none;
+    }
+  }
+  /*Mobile XS*/
+  @media (max-width: 767px) {
+    width: 224px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    &__text {
+      display: none;
+    }
+  }
+}
+.header-img {
+  img {
+    width: 475px;
+    height: 410px;
+    object-fit: cover;
+    box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
+  }
+  &__text {
+    display: none;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  /*Tablet*/
+  @media (max-width: 1139px) {
+    img {
+      width: 376px;
+      height: 325px;
+      box-shadow: none;
+    }
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    img {
+      width: 290px;
+      height: 250px;
+    }
+  }
+  /*Mobile XS*/
+  @media (max-width: 767px) {
+    &__text {
+      display: block;
+    }
+  }
+}

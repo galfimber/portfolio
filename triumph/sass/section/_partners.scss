@@ -1,0 +1,35 @@
+.partners {
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 105px;
+  &__border-l, &__border-r {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  &__border-l{
+    left: 23px;
+  }
+  &__border-r{
+    right: 23px;
+  }
+  &__title {
+    margin-bottom: 96px;
+  }
+  &__list {
+    margin-bottom: 96px;
+    padding-left: 130px;
+    padding-right: 130px;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.23;
+  }
+  &__images{
+    display: flex;
+    justify-content: center;
+    column-gap: 124px;
+  }
+}

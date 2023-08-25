@@ -1,0 +1,35 @@
+.about {
+  padding: 116px 25px;
+  @include section(row, #ebebeb, $main-black);
+  justify-content: center;
+  &__wrapper {
+    min-width: 1390px;
+    @include section(row, #ebebeb, $main-black);
+    align-items: center;
+    gap: 30px;
+  }
+  &__img {
+    @include _img("./../image/img/img5.jpg", 0, 0);
+    width: 796px;
+    height: 568px;
+  }
+  &__text {
+    width: 310px;
+  }
+  &__subtitle {
+    margin-bottom: 11px;
+  }
+  &__title {
+    max-width: 234px;
+    margin-bottom: 39px;
+  }
+  .text {
+    &:first-child {
+      @include text(14px);
+    }
+    @include text(16px);
+  }
+  .link{
+    @include link($main-black);
+  }
+}

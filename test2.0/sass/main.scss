@@ -1,0 +1,28 @@
+//Base
+@import "./base/vars";
+@import "./base/base";
+
+//Section
+@import "./section/header";
+@import "./section/mobile-nav";
+@import "./section/main";
+@import "./section/about";
+@import "./section/slider";
+@import "./section/gallery";
+@import "./section/question";
+@import "./section/footer";
+
+//Block
+@import "./block/nav";
+@import "./block/burger";
+@import "./block/btn";
+@import "./block/title";
+@import "./block/card";
+@import "./block/form";
+@import "./block/link";
+@import "./block/input";
+@import "./block/ellipse";
+
+//Slider
+@import "./slider/slider-vars";
+@import "./slider/slider-swiper";

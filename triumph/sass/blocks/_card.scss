@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+  height:min-content;
+  img {
+    border-radius: 25px;
+  }
+  &-border-r,
+  &-border-l {
+    position: absolute;
+  }
+  &-border-r {
+    top: -34px;
+    right: -28px;
+  }
+  &-border-l {
+    bottom: -35px;
+    left: -25px;
+  }
+}

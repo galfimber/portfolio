@@ -1,0 +1,23 @@
+//Base
+@import "./base/vars";
+@import "./base/base";
+
+//Blocks
+@import "./blocks/overlay";
+@import "./blocks/menu-burger";
+@import "./blocks/title";
+@import "./blocks/btn";
+@import "./blocks/links";
+@import "./blocks/cards";
+@import "./blocks/timeline";
+@import "./blocks/form";
+
+//Section
+@import "./section/nav";
+@import "./section/mobile-nav-menu";
+@import "./section/header";
+@import "./section/about";
+@import "./section/portfolio";
+@import "./section/how-work";
+@import "./section/contacts";
+@import "./section/footer";

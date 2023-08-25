@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <div class="container">
+        <div class="header__nav">
+          <div class="nav__contacts">
+            <a href="mailto: example@example.com"
+              ><span class="material-icons md-18">mail</span
+              >example@example.com</a
+            >
+            <a href="tel: +1 (514) 312-5678"
+              ><span class="material-icons md-18">phone</span>+1 (514)
+              312-5678</a
+            >
+          </div>
+          <div class="nav__main">
+            <div class="left">
+              <div class="nav__logo">
+                <img src="img/logo/logo.svg" alt="Logos" />
+              </div>
+              <nav class="nav__menu">
+                <ul class="menu">
+                  <li>
+                    <a href="#">about us</a>
+                  </li>
+                  <li>
+                    <a href="#">best offers</a>
+                  </li>
+                  <li>
+                    <a href="#">our services</a>
+                  </li>
+                  <li>
+                    <a href="#">portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">blog</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="nav__meet">
+              <a href="#">Make meeting</a>
+            </div>
+            <div class="nav__langs">
+              <div class="nav__lang" id="nav__lang">
+                <div class="lang eng" id="lang-eng">
+                  <input
+                    type="radio"
+                    value="Eng"
+                    id="eng"
+                    name="lang"
+                    onclick="checkLang()"
+                  />
+                  <label for="eng">Eng</label>
+                </div>
+                <div class="lang rus" id="lang-rus">
+                  <input
+                    type="radio"
+                    value="Rus"
+                    id="rus"
+                    name="lang"
+                    onclick="checkLang()"
+                  />
+                  <label for="rus">Rus</label>
+                </div>
+              </div>
+              <div class="nav__arrow">
+                <a href="#" onclick="openbox();"
+                  ><img src="img/icon/arrow.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="main__text">
+            <h1>Family owners business of programmers</h1>
+            <p>
+              We do not just make websites, we make selling websites using AI.
+            </p>
+            <p>Own methodology for creating and promoting sites using AI</p>
+            <p>Experience in programming 30+</p>
+            <p class="m-b-a">Results Guarantee</p>
+            <a href="#">Make meeting</a>
+          </div>
+          <div class="main__img">
+            <img src="img/img/main1.jpg" alt="" />
+            <div class="main__blur"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="us-ai">
+      <div class="container">
+        <div class="us-ai__text">
+            The use of AI is essential for businesses to remain competitive in
+            the marketplace and meet customer needs and preferences.
+        </div>
+        <div class="us-ai__cards">
+          <div class="card card-left">
+            <p class="card__header">up to $ 3900</p>
+            <p>Building a website using AI</p>
+            <p>Order now and get free high-speed hosting</p>
+            <a href="#">book meeting</a>
+          </div>
+          <div class="card card-right">
+            <p class="card__header">up to $ 900/m</p>
+            <p>SEO site optimization using AI</p>
+            <p>Order now and get one month free</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js
+    "></script>
+    <script>
+      VANTA.NET({
+        el: "#header",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x7f7bbb,
+        backgroundColor: 0x50c1a,
+        points: 20.0,
+        maxDistance: 22.0,
+        spacing: 16.0,
+      });
+    </script>
+  </body>
+</html>

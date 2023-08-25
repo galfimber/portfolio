@@ -1,0 +1,68 @@
+.title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $accentText;
+  /*Tablet*/
+  @media (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  /*Mobile XS*/
+  @media (max-width: 599px) {
+    margin-bottom: 10px;
+  }
+}
+.subtitle {
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  text-align: center;
+  color: #2e2e2e;
+  /*Tablet*/
+  @media (max-width: 1199px) {
+    margin-bottom: 60px;
+    font-size: 38px;
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  /*Mobile XS*/
+  @media (max-width: 599px) {
+    font-size: 26px;
+  }
+}
+.title__price {
+  color: #fff;
+  /*Tablet*/
+  @media (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  /*Mobile XS*/
+  @media (max-width:599px) {
+    margin-bottom: 10px;
+  }
+}
+.subtitle__price {
+  margin-bottom: 80px;
+  color: #fff;
+  /*Tablet*/
+  @media (max-width: 1199px) {
+    margin-bottom: 50px;
+  }
+  /*Mobile*/
+  @media (max-width: 899px) {
+    margin-bottom: 40px;
+  }
+}
